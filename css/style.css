@@ -24,6 +24,12 @@ default:
 
 :root {
   --primary: #087f5b;
+  --font-color: #212529;
+  --btn:#033324;
+  --btn-full-hover-active: #02261b;
+  --btn-outline-hover-active: #054c37;
+  --btn--outline: #065940;
+  --hero-section: #cee5de;
 }
 
 * {
@@ -40,11 +46,15 @@ default:
  
   body {
     font-family: 'Inter', sans-serif;
-    color: #212529;
+    color: var(--font-color);
     line-height: 1;
     font-weight: 400;
-    display: flex;
-    justify-content: center;
+
+  }
+
+  .section-hero {
+  background-color: var(--hero-section);
+  padding: 8rem 0;
   }
 
   .test {
@@ -60,7 +70,8 @@ default:
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-  
+    margin: 0 auto;
+    gap: 8rem;
   }
 
 
@@ -82,7 +93,38 @@ default:
 
   .hero-img {
     width: 100%;
-  
+  }
+
+  .btn:link, .btn:visited {
+    background-color:var(--btn);
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .btn--margin {
+    margin-right: 1.6rem;
+  }
+
+  .btn--full:link, .btn--full:visited  {
+    background-color:var(--btn);
+  }
+
+  .btn--full:hover, .btn--full:active  {
+    background-color:var(--btn-full-hover-active);
+  }
+
+  .btn--outline:link, .btn--outline:visited {
+    background-color:var(--btn--outline);
+  }
+
+  .btn--outline:hover, .btn--outline:active {
+    background-color:var(--btn-outline-hover-active);
   }
 
    /* GENERAL STYLES */
