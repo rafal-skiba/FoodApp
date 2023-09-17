@@ -105,9 +105,10 @@ default:
     cursor: pointer;
     transition: all 0.3s;
     display: inline-block;
+    font-weight: 500;
   }
 
-  .btn--margin {
+  .btn--margin { 
     margin-right: 1.6rem;
   }
 
@@ -127,5 +128,39 @@ default:
     background-color:var(--btn-outline-hover-active);
   }
 
-   /* GENERAL STYLES */
+  .customer-container {
+    display: flex;
+    align-items:center;
+  }
+
+  .customer-photos {
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+  }
+
+  .customer-photos img {
+    border-radius: 50%;
+    margin:8rem -1.2rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 0.3rem solid #cee5de;
+  }
+
+  .customer-photos img:first-child {
+    margin-left: 0;
+  }
+
+  .customer-text {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+
+  .customer-text span {
+    color: #fff;
+    background-color: var(--btn);
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
 
