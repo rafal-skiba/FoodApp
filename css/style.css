@@ -328,6 +328,29 @@ header {
     padding: 8rem 0;
   }
 
+  .meal-paragraph {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    
+  }
+
+  .meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  }
+
+  .meal-attribute {
+    font-size: 2rem;
+  }
+
+  .img-meal {
+    width: 100%;
+    font-weight: 500;
+  }
+
 
 
   
