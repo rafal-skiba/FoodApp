@@ -381,11 +381,66 @@ header {
   }
 
   .meal {
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
     border-radius: 1rem;
     
   }
 
+  .meal:hover {
+    transform: translateY(-0.4rem);
+    transition: all 0.3s;
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.07);
+  }
+
+
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .list-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .list-item-icon {
+    color: var(--primary);
+    height: 2.4rem;
+    width: 2.4rem;
+    }
+
+.margin-bottom {
+  margin-bottom: 4rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.link:link, .link:visited {
+  display: inline-block;
+  color: var(--btn-outline-hover-active);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+  
+}
+
+.link:hover, .link:active
+{
+  color: var(--btn-full-hover-active);
+  border-bottom: 1px solid transparent;
+}
+
+.heading-center {
+  text-align: center;
+}
 
 
 
