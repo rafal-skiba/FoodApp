@@ -2,6 +2,18 @@
 /* GENERAL STYLE REUSABLE */
 /* *************************** */
 
+/* COLORS */
+
+:root {
+  --primary: #087f5b;
+  --font-color: #212529;
+  --btn:#087f5b;
+  --btn-full-hover-active: #077252;
+  --btn-outline-hover-active: #218c6b;
+  --btn--outline: #39997c;
+  --hero-section: #f0f7f5;
+}
+
 .heading-primary {
     font-weight: 600;
     line-height: 1.3;
