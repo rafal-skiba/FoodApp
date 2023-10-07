@@ -558,9 +558,36 @@
                 first meal is on us!
               </p>
               <form class="cta-form" action="#">
-                <input type="text" />
-                <input type="email" />
-                <button class="btn">Sign up no</button>
+                <div>
+                  <label for="full-name">Full name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    required
+                    placeholder="your name"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="your email"
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select name="select-where" id="select-where">
+                    <option value="">Please choose one option</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-form">Sign up</button>
               </form>
             </div>
             <div
