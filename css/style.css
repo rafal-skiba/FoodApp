@@ -1,58 +1,3 @@
-/* GENERAL STYLES */
-/* TOPOGRAPHY 
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-FONT-WEIGHTS:
-default: 400, 500, 600;
-
-lINE HEIGHTS:
-default: 1, 1.3;
-
-BORDER-RADIUS:
-default: 1rem;
-
-*/
-
-
-
-/* *************************** */
-/* GENERAL STYLE */
-/* *************************** */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-  }
-
-  html {
-    font-size: 62.5%;
-    
-  }
-
- 
-  body {
-    font-family: 'Inter', sans-serif;
-    color: var(--font-color);
-    line-height: 1;
-    font-weight: 400;
-
-  }
-
-/* *************************** */
-/* GENERAL STYLE */
-/* *************************** */
-
-
-
-
-
-
 
 /* *************************** */
 /* HEADER */
@@ -216,6 +161,16 @@ header {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 8rem;
   }
+
+
+  .grid--5-cols {
+    display: grid;
+    row-gap: 8rem;
+    column-gap: 6rem;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+  }
+
 
   /* Section-featured */
 
@@ -625,7 +580,7 @@ margin-top: 3rem;
 /* Section CTA */
 
 .section-cta {
-  padding: 8rem 0;
+  padding: 0 0 9.6rem 0;
 }
 
 .cta {
@@ -703,4 +658,107 @@ color: #aaa;
 /* MAIN */
 /* *************************** */
 
+/* *************************** */
+/* FOOTER */
+/* *************************** */
 
+.footer {
+  padding: 9.6rem 0;
+  color: var(--light-grey);
+  border-top: 1px solid #eee;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+
+.contacts{
+ font-style: normal;
+ font-size: 1.6rem;
+ line-height: 1.6;
+}
+
+.contacts p:first-child {
+  margin-bottom: 3.2rem;
+}
+
+
+
+
+.logo-col {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom:3.2rem;
+}
+
+
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--light-grey);
+  transition: all 0.3s;
+}
+
+
+
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--font-color);
+}
+
+.social-media-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
+.social-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  
+}
+
+.copyright a {
+ text-decoration: none;
+ color: var(--light-grey);
+    
+}
+.copyright a:hover, .copyright a:active {
+  transition: all 0.3s;
+ color: var(--font-color);
+    
+}
+
+
+
+
+
+/* *************************** */
+/* Footer */
+/* *************************** */
