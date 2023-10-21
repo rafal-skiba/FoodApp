@@ -36,6 +36,7 @@ default: 1rem;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 
 }
 
@@ -45,6 +46,7 @@ body {
   color: var(--font-color);
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 
 }
 

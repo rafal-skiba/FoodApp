@@ -9,6 +9,7 @@ header {
   background-color: var(--hero-section);
   height: 8rem;
   padding: 0 3.2rem;
+  position: relative;
 }
 
 .logo {
@@ -73,6 +74,10 @@ header {
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+}
+
+.icon-mobile-nav[name="menu-outline"] {
+  display: block;
 }
 
 /* *************************** */
