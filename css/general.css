@@ -14,7 +14,7 @@ FONT-WEIGHTS:
 default: 400, 500, 600;
 
 lINE HEIGHTS:
-default: 1, 1.3;
+default: 1, 1.3, 1.6, 1.8 2.4 ;
 
 BORDER-RADIUS:
 default: 1rem;
@@ -31,12 +31,12 @@ default: 1rem;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  
+
 }
 
 
@@ -57,7 +57,7 @@ body {
 :root {
   --primary: #087f5b;
   --font-color: #212529;
-  --btn:#087f5b;
+  --btn: #087f5b;
   --btn-full-hover-active: #077252;
   --btn-outline-hover-active: #218c6b;
   --btn--outline: #39997c;
@@ -76,85 +76,92 @@ body {
 }
 
 .heading-primary {
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: -1px;
-    font-size: 5.2rem;
-    margin-bottom: 3.2rem;
-  }
-  
-  .heading-secondary {
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: -1px;
-    font-size: 4.4rem;
-    margin-bottom: 8rem;
-  }
-  
-  
-  .heading-tertiary {
-      font-size: 3rem;
-      line-height: 1.3;
-      margin-bottom: 3rem;
-  }
-  
-  .subheading {
-    display: block;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: var(--btn-full-hover-active);
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
-    letter-spacing: 0.5px;
-  }
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+}
 
- 
-  .btn, .btn:link, .btn:visited {
-    background-color:var(--btn);
-    font-size: 2rem;
-    color: #fff;
-    padding: 1.6rem 3.2rem;
-    text-decoration: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    display: inline-block;
-    font-weight: 500;border: none;
-    font-family: inherit;
-  }
-  
-  .btn--margin { 
-    margin-right: 1.6rem;
-  }
-  
-  .btn--full:link, .btn--full:visited  {
-    background-color:var(--btn);
-  }
-  
-  .btn--full:hover, .btn--full:active  {
-    background-color:var(--btn-full-hover-active);
-  }
-  
-  .btn--outline:link, .btn--outline:visited {
-    background-color:var(--btn--outline);
-  }
-  
-  .btn--outline:hover, .btn--outline:active {
-    background-color:var(--btn-outline-hover-active);
-  }
+.heading-secondary {
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  font-size: 4.4rem;
+  margin-bottom: 8rem;
+}
 
-  .btn-form {
-    background-color:rgb(2, 25, 18, 0.8);
-    align-self: end;
-    padding: 1rem;
-  }
 
-  .btn-form:hover {
-    background-color: var(--hero-section);
-    color: var(--font-color);
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
 
-  }
-  
-  /* *************************** */
-  /* GENERAL STYLE REUSABLE */
-  /* *************************** */
+.subheading {
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--btn-full-hover-active);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: var(--btn);
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  font-weight: 500;
+  border: none;
+  font-family: inherit;
+}
+
+.btn--margin {
+  margin-right: 1.6rem;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--btn);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--btn-full-hover-active);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: var(--btn--outline);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--btn-outline-hover-active);
+}
+
+.btn-form {
+  background-color: rgb(2, 25, 18, 0.8);
+  align-self: end;
+  padding: 1rem;
+}
+
+.btn-form:hover {
+  background-color: var(--hero-section);
+  color: var(--font-color);
+
+}
+
+/* *************************** */
+/* GENERAL STYLE REUSABLE */
+/* *************************** */

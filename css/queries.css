@@ -70,3 +70,79 @@ default: 1rem;
 
 
 }
+
+/* Below 940px (landscape tablets) */
+
+@media(max-width: 59em) {
+
+    html {
+        font-size: 50%;
+        /* 8/16 = 0,50 */
+        /* 1 rem = 8px */
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem
+    }
+
+    .customer-container {
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+    }
+
+    .hero-img-box,
+    .hero-text-box {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .logos img {
+        height: 2rem;
+    }
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem;
+    }
+
+    .meal-paragraph {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .section-testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .list-item {
+        line-height: 1.8;
+    }
+
+    .cta {
+        grid-template-columns: 1.8fr 1.2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-form {
+        margin-top: 1.2rem
+    }
+
+
+}
