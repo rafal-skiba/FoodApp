@@ -144,6 +144,31 @@ default: 1rem;
         margin-top: 1.2rem
     }
 
+    .pricing-plan {
+        width: 90%;
+    }
+
+    .grid--5-cols {
+        grid-template-columns: repeat(6, 1fr);
+
+    }
+
+    .nav-col {
+        grid-row: 1/2;
+        grid-column: span 2;
+    }
+
+    .logo-col,
+    .adress-col {
+        grid-column: span 3;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+
+
     /* Mobile nav hamburger */
 
     .btn-mobile-nav {
@@ -193,4 +218,136 @@ default: 1rem;
     .nav-link:visited {
         font-size: 2.4rem;
     }
+
+
+}
+
+/* Below 704px (smaller tablets) */
+@media (max-width: 44em) {
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+        grid-column: 1/4;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        font-size: 2.4rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+}
+
+
+/* Below 600px (phones) */
+@media(max-width: 37.5em) {
+    .section-pricing .grid--2-cols {
+        grid-template-columns: 1fr;
+        width: 70%;
+
+    }
+
+}
+
+/* Below 512px (phones) */
+@media(max-width: 34em) {
+
+    html {
+        font-size: 43.75%;
+        /* 7/16 = 0,4375 */
+        /* 1 rem = 7px */
+    }
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols,
+    .grid--5-cols {
+        row-gap: 4.8rem;
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .section-hero {
+        padding: 4.8rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .container.grid--3-cols.margin-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .customer-container {
+        flex-direction: column;
+    }
+
+    .customer-container img {
+        margin: 1rem 0 1rem;
+    }
+
+    .logos img {
+        height: 1.5rem;
+
+    }
+
+    .img-box {
+        transform: translateY(3rem);
+    }
+
+    .img-box:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-image-box {
+        grid-row: 1;
+        height: 40rem;
+    }
+
+
+    .plan-details {
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        height: 2.4rem;
+    }
+
 }
