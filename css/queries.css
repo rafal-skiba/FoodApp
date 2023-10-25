@@ -173,6 +173,7 @@ default: 1rem;
 
     .btn-mobile-nav {
         display: block;
+        z-index: 1000;
     }
 
     .main-nav {
@@ -185,13 +186,18 @@ default: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* hide nav */
-        /* display: none; */
-        transition: all 1s ease-in;
+
+        transition: all 0.7s ease-in;
         opacity: 0;
+
+        /* make it unaccessible to mouse and keyboard */
         pointer-events: none;
         visibility: hidden;
         transform: translateX(100%);
+    }
+
+    .icon-mobile-nav[name="menu-outline"] {
+        display: block;
     }
 
     .nav-open .main-nav {

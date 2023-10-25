@@ -63,6 +63,7 @@ header {
   border: none;
   background: none;
   cursor: pointer;
+  display: none;
 
 }
 
@@ -72,13 +73,17 @@ header {
   color: var(--font-color);
 }
 
+
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 
+
 .icon-mobile-nav[name="menu-outline"] {
-  display: block;
+  display: none;
 }
+
+
 
 /* *************************** */
 /* HEADER */
