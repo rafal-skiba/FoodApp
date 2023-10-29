@@ -41,3 +41,28 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+// Sticky nav if we don't see visible of hero section
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      document.querySelector(".header").classList.add("sticky");
+      sectionHeroEl.style.marginTop = "8rem";
+    }
+    if (ent.isIntersecting) {
+      document.querySelector(".header").classList.remove("sticky");
+      sectionHeroEl.style.marginTop = "0";
+    }
+  },
+  {
+    // in the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEl);
