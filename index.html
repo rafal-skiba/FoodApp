@@ -29,7 +29,7 @@
           <li><a class="nav-link" href="#meals">Meals</a></li>
           <li><a class="nav-link" href="#testimonial">Testimonials</a></li>
           <li><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link cta-link" href="#">Try for free</a></li>
+          <li><a class="nav-link cta-link" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -50,10 +50,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full btn--margin"
+            <a href="#cta" class="btn btn--full btn--margin"
               >Start eating better</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how-it-works" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
             <div class="customer-container">
               <div class="customer-photos">
                 <img src="img/customers/customer-5.jpg" alt="customer photo" />
@@ -86,9 +88,9 @@
         </div>
       </section>
 
-      <section class="section-2">
+      <section class="section-2" id="how-it-works">
         <div class="container">
-          <span class="subheading" id="how-it-works">How it works</span>
+          <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
             Your daily dose of health in 3 simple steps
           </h2>
@@ -155,9 +157,9 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
-          <span class="subheading heading-center" id="meals">Sample meals</span>
+          <span class="subheading heading-center">Sample meals</span>
           <h2 class="heading-secondary heading-center">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
@@ -310,11 +312,9 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonial">
         <div class="testimonials-container">
-          <span class="subheading heading-center" id="testimonial"
-            >References</span
-          >
+          <span class="subheading heading-center">References</span>
           <h2 class="heading-secondary heading-center">
             See what others think about us
           </h2>
@@ -411,9 +411,9 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
-          <span class="subheading heading-center" id="pricing">Pricing</span>
+          <span class="subheading heading-center">Pricing</span>
           <h2 class="heading-secondary heading-center">
             Eating well without having much money
           </h2>
@@ -559,7 +559,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -692,5 +692,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      "https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js";
+    </script>
   </body>
 </html>
