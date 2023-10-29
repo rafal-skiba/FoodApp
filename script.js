@@ -28,9 +28,16 @@ allLinks.forEach((link) => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
+    // scroll to other links
+
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // close mobile navigation if we clicked on link
+    if (link.classList.contains("nav-link")) {
+      headerEl.classList.toggle("nav-open");
     }
   });
 });
