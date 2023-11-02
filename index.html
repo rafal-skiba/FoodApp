@@ -581,7 +581,7 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" name="sign-up" method="POST" netlify>
                 <div>
                   <label for="full-name">Full name</label>
                   <input
@@ -590,6 +590,7 @@
                     required
                     placeholder="your name"
                     name="full-name"
+                    required
                   />
                 </div>
                 <div>
@@ -600,6 +601,7 @@
                     required
                     placeholder="your email"
                     name="email"
+                    required
                   />
                 </div>
                 <div>
@@ -615,7 +617,7 @@
                   </select>
                 </div>
 
-                <button class="btn btn-form">Sign up</button>
+                <button class="btn btn-form" type="submit">Sign up</button>
               </form>
             </div>
             <div
